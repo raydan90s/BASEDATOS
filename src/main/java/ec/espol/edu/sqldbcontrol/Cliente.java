@@ -61,6 +61,7 @@ public class Cliente {
     public String getTelefono() {
         return telefono;
     }
+<<<<<<< HEAD
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
@@ -85,6 +86,8 @@ public class Cliente {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+=======
+>>>>>>> DESDEDHAMAR
     
 
     

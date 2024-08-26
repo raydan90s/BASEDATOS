@@ -7,6 +7,7 @@ package ec.espol.edu.sqldbcontrol;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
+<<<<<<< HEAD
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,6 +17,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.ResourceBundle;
 
+=======
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ResourceBundle;
+>>>>>>> DESDEDHAMAR
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -25,6 +33,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
+<<<<<<< HEAD
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
@@ -38,6 +47,9 @@ import javafx.scene.layout.VBox;
 
 
 
+=======
+import javafx.beans.property.SimpleStringProperty;
+>>>>>>> DESDEDHAMAR
 
 
 /**
@@ -66,6 +78,7 @@ public class ProductosController implements Initializable {
     @FXML
     private TableColumn<Productos, String> nombrecocinero;
     
+<<<<<<< HEAD
     @FXML
     private VBox formProducto;
     @FXML
@@ -312,6 +325,14 @@ public class ProductosController implements Initializable {
         modificarProducto.setOnAction(evento -> updateVisibility(modificar, true));
         productoTable.setOnMouseClicked(event -> seleccionarProducto());
         eliminarProducto.setOnAction(event -> eliminarProducto(event));
+=======
+
+    private ObservableList<Productos> productosList;
+    private ObservableList<Empleado> empleadoList;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+>>>>>>> DESDEDHAMAR
         volver.setOnMouseClicked(event -> {
             try {
                 volverLink(event);
@@ -356,7 +377,11 @@ public class ProductosController implements Initializable {
             int codigo = resultSet.getInt("idProducto");
             String nombre = resultSet.getString("nombreProducto");
             int cantidad = resultSet.getInt("cantidadRealizada");
+<<<<<<< HEAD
             java.sql.Date fecha = resultSet.getDate("fechaProduccion");
+=======
+            Date fecha = resultSet.getDate("fechaProduccion");
+>>>>>>> DESDEDHAMAR
             Double precio = resultSet.getDouble("precioProducto");
             String receta = resultSet.getString("recetaProducto");
             String nombreEmp = resultSet.getString("nombreEmpleado");
@@ -373,6 +398,7 @@ public class ProductosController implements Initializable {
         connection.close();
     }
     
+<<<<<<< HEAD
     @FXML
     private void eliminarProducto(ActionEvent event) {
         try {
@@ -420,4 +446,9 @@ public class ProductosController implements Initializable {
     eliminarProducto.setVisible(!formVisible);
     modificarProducto.setVisible(!formVisible);
     }
+=======
+    void volverLink(MouseEvent event) throws IOException {
+        App.setRoot("MenuJefe");
+    }
+>>>>>>> DESDEDHAMAR
 }

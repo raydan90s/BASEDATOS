@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.Date;
+<<<<<<< HEAD
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -30,6 +31,21 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javax.swing.JOptionPane;
+=======
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
+>>>>>>> DESDEDHAMAR
 
 /**
  * FXML Controller class
@@ -45,13 +61,17 @@ public class InventarioController implements Initializable {
     @FXML
     private TableColumn<MateriaPrima, String> nombreMateriaColumn;
     @FXML
+<<<<<<< HEAD
     private TableColumn<MateriaPrima, String> codigoColumn;
     @FXML
+=======
+>>>>>>> DESDEDHAMAR
     private TableColumn<MateriaPrima, Integer> cantidadColumn;
     @FXML
     private TableColumn<MateriaPrima, Date> fechaElaboracionColumn;
     @FXML
     private TableColumn<MateriaPrima, Date> fechaCaducidadColumn;
+<<<<<<< HEAD
     @FXML
     private TableColumn<MateriaPrima, String> proveedorColumn;
     
@@ -103,6 +123,13 @@ public class InventarioController implements Initializable {
         modificarMateria.setOnAction(evento -> updateVisibility(modificar, true));
         materiaPrimaTable.setOnMouseClicked(event -> seleccionarMateria());
         eliminarMateria.setOnAction(event -> eliminarMateria(event));
+=======
+
+    private ObservableList<MateriaPrima> materiaPrimaList;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+>>>>>>> DESDEDHAMAR
         volver.setOnMouseClicked(event -> {
             try {
                 volverLink(event);
@@ -115,6 +142,7 @@ public class InventarioController implements Initializable {
         fechaCaducidadColumn.setCellValueFactory(new PropertyValueFactory<>("fechaCaducidad"));
         fechaElaboracionColumn.setCellValueFactory(new PropertyValueFactory<>("fechaElaboracion"));
         cantidadColumn.setCellValueFactory(new PropertyValueFactory<>("cantidad"));
+<<<<<<< HEAD
         codigoColumn.setCellValueFactory(new PropertyValueFactory<>("idMateria"));
         materiaPrimaList = FXCollections.observableArrayList();
         
@@ -122,6 +150,9 @@ public class InventarioController implements Initializable {
         new SimpleStringProperty(cellData.getValue().getNombreProveedor()));
         
         proveedorList = FXCollections.observableArrayList();
+=======
+
+>>>>>>> DESDEDHAMAR
         materiaPrimaList = FXCollections.observableArrayList();
 
         try {
@@ -132,6 +163,7 @@ public class InventarioController implements Initializable {
 
         materiaPrimaTable.setItems(materiaPrimaList);
     }
+<<<<<<< HEAD
     
     public void handleAddMateria(ActionEvent event) {
         String nombre = nombreField.getText();
@@ -407,14 +439,22 @@ public class InventarioController implements Initializable {
             JOptionPane.showMessageDialog(null, "No se pudo eliminar la Materia Prima: " + e.toString());
         }
     }
+=======
+>>>>>>> DESDEDHAMAR
 
     private void loadMateriaPrima() throws SQLException {
         Connection connection = Conexion.conectar();
         Statement statement = connection.createStatement();
+<<<<<<< HEAD
         String query = "SELECT idProveedor, nombreProveedor, apellidoProveedor, MateriaPrima.idMateria, nombreMateria, fechaCaducidad, fechaElaboracion, cantidadDisponible as cantidad" +
 "                FROM MateriaPrima" +
 "                JOIN Detalle ON MateriaPrima.idMateria = Detalle.idMateria" +
 "                JOIN Proveedor using(idProveedor);";
+=======
+        String query = "SELECT MateriaPrima.idMateria, nombreMateria, fechaCaducidad, fechaElaboracion, cantidadDisponible as cantidad "
+                + "FROM MateriaPrima "
+                + "JOIN Detalle ON MateriaPrima.idMateria = Detalle.idMateria";
+>>>>>>> DESDEDHAMAR
         ResultSet resultSet = statement.executeQuery(query);
 
         while (resultSet.next()) {
@@ -423,6 +463,7 @@ public class InventarioController implements Initializable {
             Date fechaCaducidad = resultSet.getDate("fechaCaducidad");
             Date fechaElaboracion = resultSet.getDate("fechaElaboracion");
             int cantidad = resultSet.getInt("cantidad");
+<<<<<<< HEAD
             int codigoP = resultSet.getInt("idProveedor");
             String nombreP = resultSet.getString("nombreProveedor");
             String apellidoP = resultSet.getString("apellidoProveedor");
@@ -431,6 +472,11 @@ public class InventarioController implements Initializable {
             MateriaPrima materiaPrima = new MateriaPrima(idMateria, nombreMateria, fechaCaducidad, fechaElaboracion, cantidad, proveedor);
             materiaPrimaList.add(materiaPrima);
             proveedorList.add(proveedor);
+=======
+
+            MateriaPrima materiaPrima = new MateriaPrima(idMateria, nombreMateria, fechaCaducidad, fechaElaboracion, cantidad);
+            materiaPrimaList.add(materiaPrima);
+>>>>>>> DESDEDHAMAR
         }
 
         resultSet.close();
@@ -441,6 +487,7 @@ public class InventarioController implements Initializable {
     void volverLink(MouseEvent event) throws IOException {
         App.setRoot("MenuJefe");
     }
+<<<<<<< HEAD
     
     private void updateVisibility(VBox caja, boolean formVisible) {
     caja.setVisible(formVisible);
@@ -448,4 +495,6 @@ public class InventarioController implements Initializable {
     eliminarMateria.setVisible(!formVisible);
     modificarMateria.setVisible(!formVisible);
     }
+=======
+>>>>>>> DESDEDHAMAR
 }

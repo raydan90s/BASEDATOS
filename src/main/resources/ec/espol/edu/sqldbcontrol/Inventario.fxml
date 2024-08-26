@@ -4,30 +4,47 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<<<<<<< HEAD
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+=======
+<?import javafx.scene.layout.AnchorPane?>
+>>>>>>> DESDEDHAMAR
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.espol.edu.sqldbcontrol.InventarioController">
    <children>
+<<<<<<< HEAD
       <Text fx:id="volver" fill="#2d08ff" layoutX="23.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volver" underline="true" />
       <TableView fx:id="materiaPrimaTable" layoutX="23.0" layoutY="86.0" prefHeight="316.0" prefWidth="473.0">
         <columns>
           <TableColumn fx:id="codigoColumn" prefWidth="75.0" text="Codigo" />
+=======
+      <Text fx:id="volver" fill="#2d08ff" layoutX="25.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volver" underline="true" />
+      <TableView fx:id="materiaPrimaTable" layoutX="114.0" layoutY="123.0" prefHeight="316.0" prefWidth="473.0">
+        <columns>
+>>>>>>> DESDEDHAMAR
           <TableColumn fx:id="nombreMateriaColumn" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="cantidadColumn" prefWidth="135.0" text="Cantidad" />
             <TableColumn fx:id="fechaElaboracionColumn" prefWidth="131.0" text="Fecha de Elaboracion" />
             <TableColumn fx:id="fechaCaducidadColumn" prefWidth="131.0" text="Fecha de Caducidad" />
+<<<<<<< HEAD
             <TableColumn fx:id="proveedorColumn" prefWidth="131.0" text="Proveedor" />
         </columns>
       </TableView>
       <Label layoutX="23.0" layoutY="31.0" text="INVENTARIO">
+=======
+        </columns>
+      </TableView>
+      <Label layoutX="280.0" layoutY="51.0" text="INVENTARIO">
+>>>>>>> DESDEDHAMAR
          <font>
             <Font size="25.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       
       <Button fx:id="agregarMateria" layoutX="544.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" text="Agregar Materia Prima" />
       <Button fx:id="eliminarMateria" layoutX="544.0" layoutY="191.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" text="Eliminar Materia Prima" />
@@ -64,5 +81,7 @@
           <Button onAction="#modificarMateria" text="OK" />
       </VBox>
       
+=======
+>>>>>>> DESDEDHAMAR
    </children>
 </AnchorPane>

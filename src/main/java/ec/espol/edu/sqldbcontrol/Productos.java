@@ -61,6 +61,7 @@ public class Productos {
         return empleado != null ? empleado.getNombreCompleto() : "";
     }
 
+<<<<<<< HEAD
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
@@ -89,4 +90,6 @@ public class Productos {
         this.empleado = empleado;
     }
 
+=======
+>>>>>>> DESDEDHAMAR
 }

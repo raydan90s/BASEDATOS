@@ -69,6 +69,7 @@ public class ClienteController implements Initializable{
     private TextField direccionField;
     @FXML
     private TextField telefonoField;
+<<<<<<< HEAD
     
     
     @FXML
@@ -89,6 +90,10 @@ public class ClienteController implements Initializable{
 
     private ObservableList<Cliente> clienteList;
     private int filaSeleccionada;
+=======
+
+    private ObservableList<Cliente> clienteList;
+>>>>>>> DESDEDHAMAR
     
 
     @FXML
@@ -133,6 +138,7 @@ public class ClienteController implements Initializable{
         }
 
 
+<<<<<<< HEAD
         updateVisibility(formPane ,false);
     }
     
@@ -245,6 +251,19 @@ public class ClienteController implements Initializable{
         modificarCliente.setOnAction(event -> updateVisibility(modify,true));
         eliminarCliente.setOnAction(event -> eliminarCliente(event));
         clienteTable.setOnMouseClicked(event -> seleccionarCliente());
+=======
+        updateVisibility(false);
+    }
+
+    @FXML
+    private void eliminarCliente(ActionEvent event) {
+        formPane.setVisible(false);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        agregarCliente.setOnAction(event -> updateVisibility(true));
+>>>>>>> DESDEDHAMAR
         volver.setOnMouseClicked(event -> {
             try {
                 volverLink(event);
@@ -304,8 +323,13 @@ public class ClienteController implements Initializable{
         App.setRoot("MenuJefe");
     }
     
+<<<<<<< HEAD
     private void updateVisibility(VBox caja, boolean formVisible) {
     caja.setVisible(formVisible);
+=======
+    private void updateVisibility(boolean formVisible) {
+    formPane.setVisible(formVisible);
+>>>>>>> DESDEDHAMAR
     agregarCliente.setVisible(!formVisible);
     eliminarCliente.setVisible(!formVisible);
     modificarCliente.setVisible(!formVisible);

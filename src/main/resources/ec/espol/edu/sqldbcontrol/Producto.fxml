@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -7,30 +8,52 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+=======
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+>>>>>>> DESDEDHAMAR
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.espol.edu.sqldbcontrol.ProductosController">
    <children>
+<<<<<<< HEAD
       <Text fx:id="volver" fill="#2b00ff" layoutX="23.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volver" underline="true" />
       <TableView fx:id="productoTable" layoutX="23.0" layoutY="86.0" prefHeight="300.0" prefWidth="501.0">
         <columns>
           <TableColumn fx:id="codigounicocolumn" prefWidth="75.0" text="Código" />
+=======
+      <Text fx:id="volver" fill="#2b00ff" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volver" underline="true" />
+      <TableView fx:id="productoTable" layoutX="60.0" layoutY="109.0" prefHeight="300.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="codigounicocolumn" prefWidth="75.0" text="Código único" />
+>>>>>>> DESDEDHAMAR
           <TableColumn fx:id="nombrecolumn" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="cantidadcolumn" prefWidth="75.0" text="Cantidad Disponible" />
           <TableColumn fx:id="fechaproduccioncolumn" prefWidth="75.0" text="Fecha Producción" />
           <TableColumn fx:id="preciocolumn" prefWidth="75.0" text="Precio" />
           <TableColumn fx:id="recetacolumn" prefWidth="75.0" text="Receta" />
+<<<<<<< HEAD
           <TableColumn fx:id="nombrecocinero" prefWidth="75.0" text="Cocinero" />
+=======
+          <TableColumn fx:id="nombrecocinero" prefWidth="75.0" text="Creado Por" />
+>>>>>>> DESDEDHAMAR
             
             
         </columns>
       </TableView>
+<<<<<<< HEAD
       <Label layoutX="23.0" layoutY="31.0" text="PRODUCTOS">
+=======
+      <Label layoutX="256.0" layoutY="58.0" text="PRODUCTOS">
+>>>>>>> DESDEDHAMAR
          <font>
             <Font size="24.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Button fx:id="agregarProducto" layoutX="544.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Agregar Producto" />
       <Button fx:id="eliminarProducto" layoutX="544.0" layoutY="191.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Eliminar Producto" />
       <Button fx:id="modificarProducto" layoutX="544.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Modificar Producto" />
@@ -69,5 +92,7 @@
           <Button onAction="#modificarProducto" text = "OK"/>
       </VBox>
       
+=======
+>>>>>>> DESDEDHAMAR
    </children>
 </AnchorPane>

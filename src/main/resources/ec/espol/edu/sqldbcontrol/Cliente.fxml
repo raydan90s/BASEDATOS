@@ -15,7 +15,11 @@
       <Text fx:id="volver" fill="#2b00ff" layoutX="23.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volver" underline="true" />
       <TableView fx:id="clienteTable" layoutX="23.0" layoutY="86.0" prefHeight="300.0" prefWidth="484.0">
         <columns>
+<<<<<<< HEAD
           <TableColumn fx:id="codigoColumn" prefWidth="57.0" text="Codigo" />
+=======
+          <TableColumn fx:id="codigoColumn" prefWidth="57.0" text="Codigo Unico" />
+>>>>>>> DESDEDHAMAR
             <TableColumn fx:id="nombreColumn" text="Nombre" />
             <TableColumn fx:id="apellidoColumn" prefWidth="85.0" text="Apellido" />
             <TableColumn fx:id="cedulaColumn" prefWidth="76.0" text="Cedula" />
@@ -46,6 +50,7 @@
           <TextField fx:id="telefonoField" />
           <Button onAction="#handleAddClient" text="OK" />
       </VBox>
+<<<<<<< HEAD
       
       <VBox fx:id="modify" layoutX="529.0" layoutY="66.0" prefHeight="335.0" prefWidth="166.0" spacing="10" visible="false">
           <Label text="Id:" />
@@ -63,5 +68,7 @@
           <Button onAction="#modificarCliente" text = "OK"/>
       </VBox>
       
+=======
+>>>>>>> DESDEDHAMAR
    </children>
 </AnchorPane>
