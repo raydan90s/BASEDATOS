@@ -9,11 +9,12 @@ package ec.espol.edu.sqldbcontrol;
  * @author DHAMAR
  */
 public class Sucursal {
+
     private int idSucursal;
-    private String nombreSucursal; 
+    private String nombreSucursal;
     private String direccionSucursal;
     private String telefono;
-    private String horarioSucursal; 
+    private String horarioSucursal;
     private int idJefe;
 
     public Sucursal(int idSucursal, String nombreSucursal, String direccionSucursal, String telefono, String horarioSucursal, int idJefe) {
@@ -24,7 +25,7 @@ public class Sucursal {
         this.horarioSucursal = horarioSucursal;
         this.idJefe = idJefe;
     }
-    
+
     public int getIdSucursal() {
         return idSucursal;
     }
@@ -71,6 +72,16 @@ public class Sucursal {
 
     public void setIdJefe(int idJefe) {
         this.idJefe = idJefe;
+    }
+
+    @Override
+    public String toString() {
+        return nombreSucursal + " / " + direccionSucursal;
+    }
+
+    public Sucursal(int idSucursal, String nombreSucursal) {
+        this.idSucursal = idSucursal;
+        this.nombreSucursal = nombreSucursal;
     }
     
 }

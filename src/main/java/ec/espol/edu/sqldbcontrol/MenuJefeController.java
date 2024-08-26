@@ -28,27 +28,32 @@ public class MenuJefeController implements Initializable {
     @FXML
     private Button MostrarInventario;
     @FXML
-    private Button MostrarProductos;
+    private Button MostrarProveedor;
     @FXML
-    private Button MostrarCliente;
-    @FXML
-    private Button MostrarPermisos;
-    @FXML
-    private Button mostrarSucursal;
-    @FXML
-    private Button mostrarSucursal1;
+    private Button MostrarIncidente;
 
-
-    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
         MostrarEmpleados.setOnMouseClicked(event -> {
             try {
                 MostrarEmpleados(event);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+        MostrarIncidente.setOnMouseClicked(event -> {
+            try {
+                MostrarIncidente(event);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+        MostrarProveedor.setOnMouseClicked(event -> {
+            try {
+                MostrarProveedores(event);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
@@ -61,23 +66,6 @@ public class MenuJefeController implements Initializable {
                 ex.printStackTrace();
             }
         });
-        
-        MostrarProductos.setOnMouseClicked(event -> {
-            try {
-                MostrarProductos(event);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        });
-        
-        MostrarCliente.setOnMouseClicked(event -> {
-            try {
-                MostrarCliente(event);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        });        
-        
     }
     void MostrarEmpleados(MouseEvent event) throws IOException {
         App.setRoot("Empleados");
@@ -86,27 +74,10 @@ public class MenuJefeController implements Initializable {
     void MostrarInventario(MouseEvent event) throws IOException {
         App.setRoot("Inventario");
     }
-    
-    void MostrarProductos(MouseEvent event) throws IOException{
-        App.setRoot("Producto");
+    void MostrarProveedores(MouseEvent event) throws IOException {
+        App.setRoot("Proveedor");
     }
-    
-    void MostrarCliente(MouseEvent event) throws IOException{
-        App.setRoot("Cliente");
-    }
-
-    @FXML
-    private void mostrarpermisos(MouseEvent event) throws IOException {
-        App.setRoot("Permisos");
-    }
-
-    @FXML
-    private void mostrarsucursal(MouseEvent event) throws IOException {
-        App.setRoot("Sucursal");
-    }
-
-    @FXML
-    private void mostrarsatisfaccion(MouseEvent event) throws IOException {
-        App.setRoot("Satisfaccion");
+    void MostrarIncidente(MouseEvent event) throws IOException {
+        App.setRoot("Incidente");
     }
 }
