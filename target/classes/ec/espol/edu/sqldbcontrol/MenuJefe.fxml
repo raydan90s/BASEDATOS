@@ -60,5 +60,15 @@
             <Font size="15.0" />
          </font>
       </Button>
+
+      <Button fx:id="MostrarCliente" layoutX="227.0" layoutY="153.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="148.0" text="Mostrar Cliente">
+         <font>
+            <Font name="Lato Light" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      
    </children>
 </AnchorPane>

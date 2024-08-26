@@ -36,15 +36,10 @@ public class MenuJefeController implements Initializable {
     @FXML
     private Button MostrarInventario;
     @FXML
-<<<<<<< HEAD
-    private Button MostrarProveedor;
-    @FXML
-    private Button MostrarIncidente;
-
-=======
     private Button MostrarCaja;
+    @FXML
+    private Button MostrarCliente;
     
->>>>>>> ALFONSO
     /**
      * Initializes the controller class.
      */
@@ -93,8 +88,6 @@ public class MenuJefeController implements Initializable {
                 ex.printStackTrace();
             }
         });
-<<<<<<< HEAD
-=======
         MostrarCaja.setOnMouseClicked(event -> {
             try{
                 MostrarCaja(event);
@@ -102,7 +95,14 @@ public class MenuJefeController implements Initializable {
                 ex.printStackTrace();
             }
         });
->>>>>>> ALFONSO
+
+        MostrarCliente.setOnMouseClicked(event -> {
+            try {
+                MostrarCliente(event);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });   
     }
     void MostrarEmpleados(MouseEvent event) throws IOException {
         App.setRoot("Empleados");
@@ -122,15 +122,10 @@ public class MenuJefeController implements Initializable {
     void MostrarInventario(MouseEvent event) throws IOException {
         App.setRoot("Inventario");
     }
-<<<<<<< HEAD
-    void MostrarProveedores(MouseEvent event) throws IOException {
-        App.setRoot("Proveedor");
-    }
-    void MostrarIncidente(MouseEvent event) throws IOException {
-        App.setRoot("Incidente");
-=======
     void MostrarCaja(MouseEvent event) throws IOException {
         App.setRoot("Caja");
->>>>>>> ALFONSO
+    }
+    void MostrarCliente(MouseEvent event) throws IOException{
+        App.setRoot("Cliente");
     }
 }

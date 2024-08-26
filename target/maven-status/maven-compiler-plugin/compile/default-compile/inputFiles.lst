@@ -1,4 +1,5 @@
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\App.java
+<<<<<<< HEAD
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\MateriaPrimaController.java
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\SucursalController.java
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\EmpleadosController.java
@@ -34,3 +35,18 @@ C:\Users\Raydan\Documents\BASEDATOS\src\main\java\module-info.java
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\ClienteController.java
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\InventarioController.java
 C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\MateriaPrima.java
+=======
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\EmpleadosController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\AgregarIncidenteController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\IncidenteController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\AgregarEmpleadoController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\ProveedorController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\MenuJefeController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\Conexion.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\Proveedor.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\Sucursal.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\Empleado.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\AgregarProveedorController.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\ec\espol\edu\sqldbcontrol\Incidente.java
+C:\Users\Raydan\Documents\BASEDATOS\src\main\java\module-info.java
+>>>>>>> 4a1b45d (PARTE JUAN)
