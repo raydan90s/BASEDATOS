@@ -60,5 +60,13 @@ public class Empleado {
     public void setId(int id) {
         this.id = id;
     }
+    public String getNombreCompleto() {
+        return nombreEmpleado + " " + apellidoEmpleado;
+    }
+
+    @Override
+    public String toString() {
+        return nombreEmpleado + " " + apellidoEmpleado + "/ " + tipoEmpleado;
+    }
     
 }

@@ -28,8 +28,6 @@ import javafx.stage.Stage;
 public class IncidenteController implements Initializable {
 
     @FXML
-    private Text volver; 
-    @FXML
     private TableView<Incidente> incidentesTable;
     @FXML
     private TableColumn<Incidente, Integer> idIncidenteColumn;
@@ -45,7 +43,8 @@ public class IncidenteController implements Initializable {
     private TableColumn<Incidente, Integer> idEmpleadoColumn;
 
     private ObservableList<Incidente> incidentesList;
-
+    @FXML
+    private Text volver;
     @FXML
     private Button agregar;
     @FXML
@@ -79,7 +78,9 @@ public class IncidenteController implements Initializable {
 
         incidentesTable.setItems(incidentesList);
     }
-
+     void volverLink(MouseEvent event) throws IOException {
+        App.setRoot("MenuJefe");
+    } 
     public void loadIncidentes() throws SQLException {
         incidentesList.clear();
 
@@ -165,9 +166,6 @@ public class IncidenteController implements Initializable {
         } else {
             System.out.println("Por favor, seleccione un incidente para eliminar.");
         }
-    }
-    void volverLink(MouseEvent event) throws IOException {
-        App.setRoot("MenuJefe");
     }
 }
 

@@ -52,7 +52,7 @@ public class EmpleadosController implements Initializable {
     private TableColumn<Empleado, Double> salarioColumn;
     @FXML
     private TableColumn<Empleado, String> sucursalColumn;
-
+    
     private ObservableList<Empleado> empleadosList;
     @FXML
     private TableColumn<Empleado, String> tipoColumn;
