@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.espol.edu.sqldbcontrol.MenuJefeController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.espol.edu.sqldbcontrol.MenuJefeController">
    <children>
-      <Button fx:id="MostrarEmpleados" layoutX="227.0" layoutY="108.0" mnemonicParsing="false" text="Mostrar Empleados">
+      <Button fx:id="MostrarEmpleados" layoutX="227.0" layoutY="82.0" mnemonicParsing="false" text="Mostrar Empleados">
          <font>
             <Font name="Lato Light" size="15.0" />
          </font>
@@ -16,7 +16,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="MostrarInventario" layoutX="229.0" layoutY="169.0" mnemonicParsing="false" text="Mostrar Inventario">
+      <Button fx:id="MostrarMateriaPrima" layoutX="218.0" layoutY="128.0" mnemonicParsing="false" text="Mostrar MateriaPrima">
          <font>
             <Font name="Lato Light" size="15.0" />
          </font>
@@ -29,7 +29,7 @@
             <Font name="Candara Light" size="30.0" />
          </font>
       </Label>
-      <Button fx:id="MostrarProveedor" layoutX="222.0" layoutY="235.0" mnemonicParsing="false" text="Mostrar Proveedores">
+      <Button fx:id="MostrarProveedor" layoutX="221.0" layoutY="169.0" mnemonicParsing="false" text="Mostrar Proveedores">
          <font>
             <Font name="Lato Light" size="15.0" />
          </font>
@@ -37,13 +37,28 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="MostrarIncidente" layoutX="228.0" layoutY="293.0" mnemonicParsing="false" text="Mostrar Incidentes">
+      <Button fx:id="MostrarIncidente" layoutX="228.0" layoutY="212.0" mnemonicParsing="false" text="Mostrar Incidentes">
          <font>
             <Font name="Lato Light" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+      </Button>
+      <Button fx:id="MostrarPedido" layoutX="236.0" layoutY="258.0" mnemonicParsing="false" text="Mostrar Pedidos">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="MostrarInventario" layoutX="229.0" layoutY="304.0" mnemonicParsing="false" text="Mostrar Inventario">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="MostrarCaja" layoutX="237.0" layoutY="345.0" mnemonicParsing="false" text="Mostrar Caja">
+         <font>
+            <Font size="15.0" />
+         </font>
       </Button>
    </children>
 </AnchorPane>

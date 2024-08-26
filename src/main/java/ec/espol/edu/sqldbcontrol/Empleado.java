@@ -9,7 +9,7 @@ package ec.espol.edu.sqldbcontrol;
  * @author Sak
  */
 public class Empleado {
-    
+
     private int id;
     private String nombreEmpleado;
     private String apellidoEmpleado;
@@ -18,7 +18,7 @@ public class Empleado {
     private String nombreSucursal;
     private String tipoEmpleado;
 
-    public Empleado(int id,String nombreEmpleado, String apellidoEmpleado, String horarioEmpleado, double salario, String nombreSucursal, String tipoEmpleado) {
+    public Empleado(int id, String nombreEmpleado, String apellidoEmpleado, String horarioEmpleado, double salario, String nombreSucursal, String tipoEmpleado) {
         this.id = id;
         this.nombreEmpleado = nombreEmpleado;
         this.apellidoEmpleado = apellidoEmpleado;
@@ -26,6 +26,12 @@ public class Empleado {
         this.salario = salario;
         this.nombreSucursal = nombreSucursal;
         this.tipoEmpleado = tipoEmpleado;
+    }
+
+    public Empleado(String nombreEmpleado, String apellidoEmpleado) {
+        this.nombreEmpleado = nombreEmpleado;
+        this.apellidoEmpleado = apellidoEmpleado;
+
     }
 
     // Getters y setters
@@ -60,5 +66,14 @@ public class Empleado {
     public void setId(int id) {
         this.id = id;
     }
-    
+
+    public String getNombreCompleto() {
+        return nombreEmpleado + " " + apellidoEmpleado;
+    }
+
+    @Override
+    public String toString() {
+        return nombreEmpleado + " " + apellidoEmpleado + "/ " + tipoEmpleado;
+    }
+
 }

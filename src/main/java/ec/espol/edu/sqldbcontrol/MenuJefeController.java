@@ -26,12 +26,25 @@ public class MenuJefeController implements Initializable {
     @FXML
     private Button MostrarEmpleados;
     @FXML
-    private Button MostrarInventario;
+    private Button MostrarMateriaPrima;
     @FXML
     private Button MostrarProveedor;
     @FXML
     private Button MostrarIncidente;
+    @FXML
+    private Button MostrarPedido;
+    @FXML
+    private Button MostrarInventario;
+    @FXML
+<<<<<<< HEAD
+    private Button MostrarProveedor;
+    @FXML
+    private Button MostrarIncidente;
 
+=======
+    private Button MostrarCaja;
+    
+>>>>>>> ALFONSO
     /**
      * Initializes the controller class.
      */
@@ -59,25 +72,65 @@ public class MenuJefeController implements Initializable {
             }
         });
 
-        MostrarInventario.setOnMouseClicked(event -> {
+        MostrarMateriaPrima.setOnMouseClicked(event -> {
             try {
-                MostrarInventario(event);
+                MostrarMateriaPrima(event);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         });
+        MostrarPedido.setOnMouseClicked(event -> {
+            try{
+                MostrarPedido(event);
+            }catch (IOException ex){
+                ex.printStackTrace();
+            }
+        });
+        MostrarInventario.setOnMouseClicked(event -> {
+            try{
+                MostrarInventario(event);
+            }catch (IOException ex){
+                ex.printStackTrace();
+            }
+        });
+<<<<<<< HEAD
+=======
+        MostrarCaja.setOnMouseClicked(event -> {
+            try{
+                MostrarCaja(event);
+            }catch (IOException ex){
+                ex.printStackTrace();
+            }
+        });
+>>>>>>> ALFONSO
     }
     void MostrarEmpleados(MouseEvent event) throws IOException {
         App.setRoot("Empleados");
     }
-
-    void MostrarInventario(MouseEvent event) throws IOException {
-        App.setRoot("Inventario");
+    void MostrarMateriaPrima(MouseEvent event) throws IOException {
+        App.setRoot("MateriaPrima");
     }
     void MostrarProveedores(MouseEvent event) throws IOException {
         App.setRoot("Proveedor");
     }
     void MostrarIncidente(MouseEvent event) throws IOException {
         App.setRoot("Incidente");
+    }
+    void MostrarPedido(MouseEvent event) throws IOException {
+        App.setRoot("Pedido");
+    }
+    void MostrarInventario(MouseEvent event) throws IOException {
+        App.setRoot("Inventario");
+    }
+<<<<<<< HEAD
+    void MostrarProveedores(MouseEvent event) throws IOException {
+        App.setRoot("Proveedor");
+    }
+    void MostrarIncidente(MouseEvent event) throws IOException {
+        App.setRoot("Incidente");
+=======
+    void MostrarCaja(MouseEvent event) throws IOException {
+        App.setRoot("Caja");
+>>>>>>> ALFONSO
     }
 }

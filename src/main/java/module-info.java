@@ -8,4 +8,5 @@ module ec.espol.edu.sqldbcontrol {
     exports ec.espol.edu.sqldbcontrol;
     requires javafx.graphicsEmpty;
     requires java.base;
+    requires java.desktop;
 }
