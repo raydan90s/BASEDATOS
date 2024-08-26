@@ -39,12 +39,45 @@ public class MenuJefeController implements Initializable {
     private Button MostrarCaja;
     @FXML
     private Button MostrarCliente;
+    @FXML
+    private Button MostrarPermisos;
+    @FXML
+    private Button mostrarSucursal;
+    @FXML
+    private Button mostrarSatisfaccion;
+    
     
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        MostrarPermisos.setOnMouseClicked(event -> {
+            try {
+                mostrarpermisos(event);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        mostrarSucursal.setOnMouseClicked(event -> {
+            try {
+                mostrarsucursal(event);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        mostrarSatisfaccion.setOnMouseClicked(event -> {
+            try {
+                mostrarsatisfaccion(event);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+
         MostrarEmpleados.setOnMouseClicked(event -> {
             try {
                 MostrarEmpleados(event);
@@ -128,4 +161,19 @@ public class MenuJefeController implements Initializable {
     void MostrarCliente(MouseEvent event) throws IOException{
         App.setRoot("Cliente");
     }
+    @FXML
+    void mostrarpermisos(MouseEvent event) throws IOException{
+        App.setRoot("Permisos");
+    }
+
+    @FXML
+    void mostrarsucursal(MouseEvent event) throws IOException{
+        App.setRoot("Sucursal");
+    }
+
+    @FXML
+    void mostrarsatisfaccion(MouseEvent event) throws IOException{
+        App.setRoot("Satisfaccion");
+    }
+
 }

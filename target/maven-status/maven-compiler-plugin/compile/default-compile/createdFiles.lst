@@ -14,7 +14,6 @@ ec\espol\edu\sqldbcontrol\SatisfaccionController.class
 ec\espol\edu\sqldbcontrol\MenuJefeController.class
 ec\espol\edu\sqldbcontrol\Jefe.class
 ec\espol\edu\sqldbcontrol\Caja.class
-ec\espol\edu\sqldbcontrol\SecondaryController.class
 ec\espol\edu\sqldbcontrol\AgregarEmpleadoController.class
 ec\espol\edu\sqldbcontrol\Pedido.class
 ec\espol\edu\sqldbcontrol\AgregarInventarioController.class
@@ -24,7 +23,6 @@ ec\espol\edu\sqldbcontrol\App.class
 module-info.class
 ec\espol\edu\sqldbcontrol\AgregarPedidoController.class
 ec\espol\edu\sqldbcontrol\Incidente.class
-ec\espol\edu\sqldbcontrol\PrimaryController.class
 ec\espol\edu\sqldbcontrol\Inventario.class
 ec\espol\edu\sqldbcontrol\Empleado.class
 ec\espol\edu\sqldbcontrol\MateriaPrimaController.class
